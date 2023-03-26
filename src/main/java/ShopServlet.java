@@ -59,7 +59,7 @@ public class ShopServlet extends HttpServlet {
              * other tasks becoming easier to finish.
              **/
             try {
-                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/iut_labs", "username", "password");
+                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:port/dbname", "username", "password");
                 Statement statement = connection.createStatement();
 
                 /**
