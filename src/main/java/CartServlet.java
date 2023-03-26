@@ -85,7 +85,7 @@ public class CartServlet extends HttpServlet{
          * Checkout and the Logout buttons.
         **/
         try{
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/iut_labs", "username", "password");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:port/dbname", "username", "password");
 
             Statement statement = connection.createStatement();
 
