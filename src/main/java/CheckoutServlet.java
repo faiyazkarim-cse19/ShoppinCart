@@ -16,7 +16,7 @@ public class CheckoutServlet extends HttpServlet{
          * used to set all of the item numbers to zero.
         **/
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/iut_labs", "username", "password");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:port/dbname", "username", "password");
             Statement statement = connection.createStatement();
             statement = connection.prepareStatement("UPDATE iut_labs.cart SET quantity = ? WHERE customerName = 'Faiyaz' and itemName = 'Apple'");
             ((PreparedStatement) statement).setInt(1, 0);
